@@ -16,11 +16,13 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
+TOKEN = ""
+
 
 def main():
     global markup, shazam, dialog
     application = Application.builder().token(
-        "1718648860:AAGEsVoBXRfgKPumKkLhtKeu-KZr6ZYWzAA").read_timeout(30).write_timeout(30).build()
+        TOKEN).read_timeout(30).write_timeout(30).build()
 
     # text_handler = MessageHandler(filters.TEXT, echo)
 
